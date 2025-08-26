@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Путь к папке с обоями
-WALLPAPER_DIR="$HOME/.local/share/wallpapers"
+WALLPAPER_DIR="$HOME/Pictures/Wallpapers"
 
 # Проверяем, что папка существует
 if [ ! -d "$WALLPAPER_DIR" ]; then
