@@ -1,0 +1,101 @@
+/* --- Global Styles --- */
+* {
+  font-family: 'NotoSans Nerd Font', SF Pro Display;
+  font-size: 13px; /* Уменьшил размер шрифта */
+  }
+
+/* --- Waybar Container --- */
+#waybar {
+  background: transparent;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+/* --- Все модули --- */
+#clock,
+#custom-cava,
+#hardware,
+#cpu,
+#memory,
+#custom-cpu_temp,
+#custom-gpu_temp,
+#tray,
+#language,
+#network,
+#pulseaudio,
+#group-power,
+#custom-power,
+#custom-quit,
+#custom-lock,
+#custom-reboot {
+  background-color: #000000;
+  padding: 0.1rem 0.6rem; /* СИЛЬНО уменьшил отступы */
+  margin: 2px; /* Уменьшил внешние отступы */
+  border-radius: 13px; /* Меньшее скругление */
+  border: none;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+/* --- Paddings --- */
+
+#network {
+  padding: 0.2rem 0.7rem 0.2rem 0.6rem;}
+
+#tray {
+  padding: 0.2rem 0.6rem;}
+
+#tray > * {
+  padding: 1px 2px;}
+
+/* --- Hover effects --- */
+#network:hover {
+  background-color: #333333;
+  border-radius: 13px; 
+  color: #ffffff;}  
+
+#pulseaudio:hover {
+  background-color: #333333;
+  border-radius: 13px; 
+  color: #ffffff;}
+
+#workspaces button:hover {
+  background-color: #333333;
+  border-radius: 13px; 
+  color: #ffffff;}
+
+#tray > *:hover {
+  background-color: #333333;
+  border-radius: 13px; 
+  color: #ffffff;}
+
+/* --- Workspaces --- */
+#workspaces {
+  padding: 0.2rem 0.2rem 0.2rem 0.2rem; /* Минимальные отступы */
+  background-color: #000000; 
+  margin: 0 3px;
+  border-radius: 13px;}
+
+#workspaces button {
+  color: #cccccc;
+  padding: 0.2rem 0.3rem 0.2rem 0.1rem; /* Ещё меньше */
+  background: transparent;
+  transition: all 0.2s ease-in-out;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  margin: 0 1px;
+  min-height: 18px;}
+
+#workspaces button.active {
+  color: #ffffff;}
+
+/* --- Tooltip Styles --- */
+tooltip {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 4px 8px;
+  margin: 3px 0;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 11px;
+}
